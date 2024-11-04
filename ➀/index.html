@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+          $(".faq dt").on("click",function(){
+              //ここに処理の中身を書く
+              $(this).next .slideToggle();//➀「回答がスライドしてきて、表示非表示が切り替わる」
+              $(this).toggleClass("open");//➁「クリックしたら矢印の向きが変わる」
+          });
+      });
+    </script>
+  </body>
+</html>
